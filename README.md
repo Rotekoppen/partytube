@@ -36,3 +36,7 @@ To take control over the video playback visit ```serverIp:3000/admin/panel/```
 You can also spesify a spesific ip at the end of your link by adding a ```?``` followed by the Ip
 
 ```serverIp:3000/?IpToConnectTo```
+
+# Warning
+
+This program is not suited for large scale use, as everyone can access the admin control panel.
