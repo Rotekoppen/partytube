@@ -1,5 +1,5 @@
 # PartyTube
-Simple light Youtube video requesting system, for playing them on a big screen
+Simple tiny Youtube video requesting system, for playing them on a big screen
 
 ## Setup
 
