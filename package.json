@@ -1,0 +1,15 @@
+{
+  "name": "partytube",
+  "version": "1.0.0",
+  "description": "A Youtube controller (?) made for use at partyies",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "Rotekoppen",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.2.0"
+  }
+}

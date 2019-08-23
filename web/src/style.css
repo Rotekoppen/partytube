@@ -1,0 +1,38 @@
+.panel-body {
+  background-color: black;
+  margin: 50px;
+}
+
+.canvas {
+  background-color: rgb(30, 30, 30);
+  color: white;
+  padding: 25px;
+}
+
+.errorlist {
+  background-color: rgba(255, 50, 50);
+  overflow: hidden;
+  margin: 25px 0px;
+}
+
+.errorlist p {
+  padding: 0px 15px;
+}
+
+.hidden {
+  visibility: hidden;
+  height: 0px !important;
+  margin: 0px !important;
+}
+
+.statuslist p {
+  float: left;
+  padding: 0px;
+  padding-right: 25px;
+  margin: 0px;
+}
+
+.statuslist {
+  margin-top: 15px;
+  overflow: auto;
+}

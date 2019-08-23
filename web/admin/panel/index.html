@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PartyTube - Admin Control Panel</title>
+    <script src="/src/js/base.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+    <link rel="stylesheet" type="text/css" href="/src/style.css">
+  </head>
+  <body class="panel-body">
+    <div class="canvas">
+      <h1>PartyTube - Admin Control Panel</h1>
+      <button type="button" name="">Play</button>
+      <button type="button" name="">Pause</button>
+      <button type="button" name="" onclick="socket.emit('admin-skip')">Skip</button>
+      <button type="button" name="" onclick="socket.emit('admin-resetsize')">Reset Player Size</button>
+      <button type="button" name="" onclick="socket.emit('admin-showpanel')">Show Panel</button>
+      <div class="statuslist">
+        <p id="status">status: disconnected</p>
+        <p>made by: Rotekoppen</p>
+      </div>
+      <div class="errorlist hidden">
+      </div>
+    </div>
+  </body>
+</html>

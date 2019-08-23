@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PartyTube - Suggest Video</title>
+    <script src="/src/js/base.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/src/style.css">
+  </head>
+  <body class="panel-body">
+    <div class="canvas">
+      <h1>PartyTube</h1>
+      <p>Paste the last set of characters in a youtube link to submit your video to the queue</p>
+      <p>Example: <s>https://www.youtube.com/watch?v=</s><b>dQw4w9WgXcQ</b></p>
+      <h4>Username:</h4>
+      <input type="text" name="" value="" id="usernameInput">
+      <h4>Video id:</h4>
+      <input type="text" name="" value="" id="videoIDInput">
+      <button type="button" name="" onclick="requestVideo()">Submit</button>
+      <div class="statuslist">
+        <p id="status">status: disconnected</p>
+        <p>made by: Rotekoppen</p>
+      </div>
+      <div class="errorlist hidden">
+      </div>
+    </div>
+  </body>
+</html>
