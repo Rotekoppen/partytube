@@ -1,5 +1,5 @@
 # PartyTube
-Simple light Youtube video requesting system, with graphical user interfaces, for playing them on a big screen
+Simple light cross-platform Youtube video requesting system, with graphical user interfaces, for playing them on a big screen
 
 ## Setup
 
