@@ -40,3 +40,5 @@ You can also spesify a spesific ip at the end of your link by adding a ```?``` f
 # Warning
 
 This program is not suited for large scale use, as everyone can access the admin control panel.
+
+This program doesn't tackle 2 big screens yet. Planned for the future is slave screens
