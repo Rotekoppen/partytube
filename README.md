@@ -1,6 +1,8 @@
 # PartyTube
 Simple tiny cross-platform Youtube video requesting system, with graphical user interfaces, for playing them on a big screen
 
+Lincenced under the WTFPL licence http://www.wtfpl.net/
+
 ## Setup
 
 1.  Install nodejs and npm
