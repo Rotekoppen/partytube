@@ -3,25 +3,27 @@ Simple light Youtube video requesting system, for playing them on a big screen
 
 ## Setup
 
-Install nodejs and npm
+1.  Install nodejs and npm
 
-arch ```pacman -S nodejs npm```
+    arch ```pacman -S nodejs npm```
 
-ubuntu ```apt-get install nodejs npm```
+    ubuntu ```apt-get install nodejs npm```
 
-Download the repo
+2.  Download the repo
 
-```git clone https://github.com/Rotekoppen/partytube/```
+    ```git clone https://github.com/Rotekoppen/partytube/```
 
-Download the required modules
+3.  Download the required modules
 
-```npm clean-install```
+    ```cd partytube```
+    
+    ```npm clean-install```
 
-Run
+4.  Run
 
-```node index.js```
+    ```node index.js```
 
-profit
+5.  profit
 
 ## Usage
 
