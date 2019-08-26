@@ -5,11 +5,11 @@ Lincenced under the WTFPL licence http://www.wtfpl.net/
 
 ## Setup
 
-1.  Install nodejs and npm
+1.  Install git, nodejs and npm
 
-    arch ```pacman -S nodejs npm```
+    arch ```pacman -S git nodejs npm```
 
-    ubuntu ```apt-get install nodejs npm```
+    ubuntu ```apt-get install git nodejs npm```
 
 2.  Download the repo
 
