@@ -2,11 +2,21 @@ var app = require('express')();
 var express = require('express');
 var http = require('http').createServer(app);
 var io = require('socket.io')(http);
+var fs = require("fs");
+
+var configFile = fs.readFileSync("config.json");
+var config = JSON.parse(configFile);
 
 var queue = [];   //1 Vid ID, 2 Requester
 var history = [];
 
 var playing = true;
+
+var minutes = 5, the_interval = minutes * 60 * 1000;
+setInterval(function() {
+  console.log("showing panel, as i do every " + config.ShowPanelInterval + " minutes");
+  io.emit("showpanel")
+}, config.ShowPanelInterval * 60 * 1000);
 
 app.use(express.static('web'))
 
@@ -63,11 +73,21 @@ io.on('connection', function(socket){
     io.emit("resetsize")
   });
 
+  socket.on("sync-players", function(req){
+    console.log("syncing players");
+    io.emit("get-time");
+  });
+
+  socket.on("sync-players", function(time, id){
+    console.log("syncing players");
+    io.emit("sync-with-time", time, id);
+  });
+
   socket.on('disconnect', function(){
     console.log('user disconnected');
   });
 });
 
-http.listen(3000, function(){
-  console.log('PartyTube running on port 3000');
+http.listen(config.port, function(){
+  console.log('PartyTube running on port ' + config.port);
 });

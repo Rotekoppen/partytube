@@ -23,10 +23,6 @@ function Viewsetup() {
     tempPanel(5);
   });
 
-  socket.on('chat message', function(msg){
-      $('#messages').append($('<li>').text(msg));
-  });
-
   setTimeout(function(){ setPanelState("closed"); }, 3000);
 }
 
