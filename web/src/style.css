@@ -10,19 +10,13 @@
 }
 
 .errorlist {
-  background-color: rgba(255, 50, 50);
-  overflow: hidden;
-  margin: 25px 0px;
+  margin-top: 15px;
 }
 
 .errorlist p {
-  padding: 0px 15px;
-}
-
-.hidden {
-  visibility: hidden;
-  height: 0px !important;
-  margin: 0px !important;
+  overflow: hidden;
+  padding: 15px 15px;
+  margin: 0px;
 }
 
 .statuslist p {
@@ -30,6 +24,18 @@
   padding: 0px;
   padding-right: 25px;
   margin: 0px;
+}
+
+.success {
+  background-color: rgba(50, 150, 50);
+}
+
+.error {
+  background-color: rgba(150, 50, 50);
+}
+
+.info {
+  background-color: rgba(50, 50, 150);
 }
 
 .statuslist {

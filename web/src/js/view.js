@@ -15,12 +15,12 @@ function Viewsetup() {
   canvasItem = document.getElementById('canvasItem')
   ytPlayer.height = windowHeight
   socket.on('showpanel', function(){
-    setPanelState("open");
-    setTimeout(function(){ setPanelState("closed"); }, 7000);
+    tempPanel(7);
   });
   socket.on('getcurrent', function(id){
     player.loadVideoById(id.id);
     document.getElementById("reqstatus").innerHTML = "requested by: " + id.req;
+    tempPanel(5);
   });
 
   socket.on('chat message', function(msg){
@@ -28,6 +28,11 @@ function Viewsetup() {
   });
 
   setTimeout(function(){ setPanelState("closed"); }, 3000);
+}
+
+function tempPanel(time) {
+  setPanelState("open");
+  setTimeout(function(){ setPanelState("closed"); }, time * 1000);
 }
 
 function setPanelState(state) {

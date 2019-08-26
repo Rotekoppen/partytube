@@ -13,14 +13,14 @@
   <body class="panel-body">
     <div class="canvas">
       <h1>PartyTube - Admin Control Panel</h1>
-      <button type="button" name="" onclick="socket.emit('admin-skip')">Skip</button>
-      <button type="button" name="" onclick="socket.emit('admin-resetsize')">Reset Player Size</button>
-      <button type="button" name="" onclick="socket.emit('admin-showpanel')">Show Panel</button>
+      <button type="button" name="" onclick="socket.emit('admin-skip'); createError('Skipped!', 'success');">Skip</button>
+      <button type="button" name="" onclick="socket.emit('admin-resetsize'); createError('Reset Size', 'success');">Reset Player Size</button>
+      <button type="button" name="" onclick="socket.emit('admin-showpanel'); createError('Showed Panel', 'success');">Show Panel</button>
       <div class="statuslist">
         <p id="status">status: disconnected</p>
         <p>made by: Rotekoppen</p>
       </div>
-      <div class="errorlist hidden">
+      <div id="errorlist" class="errorlist">
       </div>
     </div>
   </body>

@@ -17,6 +17,11 @@ function setup() { //replace with expected ip 192.168.12.1
 
 function requestVideo() {
   socket.emit('request', getRequest());
+  createError("Requested video: " + document.getElementById("videoIDInput").value, "success");
+}
+
+function createError(error, state) {
+  document.getElementById("errorlist").innerHTML = "<p class=" + state + ">" + error + "</p>" + document.getElementById("errorlist").innerHTML
 }
 
 function getRequest() {
