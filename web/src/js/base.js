@@ -1,8 +1,8 @@
 var socket = null
 
-function setup() { //replace with expected ip 192.168.12.1
+function setup() {
   if (!document.URL.includes("?")) {
-    socket = io.connect("http://192.168.12.1:3000");
+    socket = io.connect("http://192.168.12.1:3000"); //replace with expected ip
   }else {
     socket = io.connect("http://" + document.URL.split("?").pop());
   }

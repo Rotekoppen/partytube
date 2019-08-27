@@ -7,16 +7,16 @@ var fs = require("fs");
 var configFile = fs.readFileSync("config.json");
 var config = JSON.parse(configFile);
 
-var queue = [];   //1 Vid ID, 2 Requester
+var queue = [];   // 1 Vid ID, 2 Requester
 var history = [];
 
 var playing = true;
-
-var minutes = 5, the_interval = minutes * 60 * 1000;
-setInterval(function() {
-  console.log("showing panel, as i do every " + config.ShowPanelInterval + " minutes");
-  io.emit("showpanel")
-}, config.ShowPanelInterval * 60 * 1000);
+if (config.ShowPanelInterval != 0) {
+  setInterval(function() {
+    console.log("showing panel, as i do every " + config.ShowPanelInterval + " minutes");
+    io.emit("showpanel")
+  }, config.ShowPanelInterval * 60 * 1000);
+}
 
 app.use(express.static('web'))
 

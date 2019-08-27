@@ -1,4 +1,7 @@
 {
+  "the port to run the server on":"",
   "port"             :3000,
-  "ShowPanelInterval":5 //show the panel every X minutes
+
+  "show the panel every X minutes, or 0 to disable":"",
+  "ShowPanelInterval":5
 }

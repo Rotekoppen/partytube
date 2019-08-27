@@ -18,7 +18,7 @@ Lincenced under the WTFPL licence http://www.wtfpl.net/
 3.  Download the required modules
 
     ```cd partytube```
-    
+
     ```npm clean-install```
 
 4.  Run
@@ -26,6 +26,10 @@ Lincenced under the WTFPL licence http://www.wtfpl.net/
     ```node index.js```
 
 5.  profit
+
+## Config
+
+Config is mostly done in config.json, but the expected ip has to be set in web/src/js/base.js
 
 ## Usage
 
